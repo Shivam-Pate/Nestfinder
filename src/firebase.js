@@ -5,7 +5,7 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey:  "AIzaSyB1zFZRPQ_JFSatlq04Y0p-TddNwRsqmnY",
+  apiKey:  import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "nestfinder-bdfb2.firebaseapp.com",
   projectId: "nestfinder-bdfb2",
   storageBucket: "nestfinder-bdfb2.appspot.com",
