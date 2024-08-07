@@ -286,7 +286,7 @@ export default function CreateListing() {
                 )}
               </div>
             </div>
-            {formData.offer && (
+            
               <div className='flex items-center gap-2'>
                 <input
                   type='number'
@@ -306,7 +306,7 @@ export default function CreateListing() {
                   )}
                 </div>
               </div>
-            )}
+            
           </div>
         </div>
         <div className='flex flex-col flex-1 gap-4'>
