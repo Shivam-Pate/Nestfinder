@@ -168,7 +168,7 @@ console.log(formData)
 
   return (
     <div className='p-3 max-w-lg mx-auto'>
-    <h1 className='text-3xl font-semibold text-center my-7'>Profile</h1>
+    <h1 className='text-4xl font-semibold text-center my-7'>Profile</h1>
     <form onSubmit={handleSubmit} className='flex flex-col gap-4'>
     <input
            onChange={(e) => setFile(e.target.files[0])}
@@ -181,7 +181,7 @@ console.log(formData)
           onClick={() => fileRef.current.click()}
         src={ formData.avatar || currentUser.avatar}
         alt='profile'
-        className='rounded-full h-24 w-24 object-cover cursor-pointer self-center mt-2'
+        className='rounded-full h-28 w-28 object-cover cursor-pointer self-center mt-2'
       />
 
 <p className='text-sm self-center'>
@@ -204,7 +204,7 @@ console.log(formData)
         placeholder='username'
         defaultValue={currentUser.username}
         id='username'
-        className='border p-3 rounded-lg'
+        className='border p-4 text-xl rounded-lg'
         onChange={handleChange}
       />
       <input
@@ -212,7 +212,7 @@ console.log(formData)
         placeholder='email'
         id='email'
         defaultValue={currentUser.email}
-        className='border p-3 rounded-lg'
+        className='border p-4 text-xl rounded-lg'
         onChange={handleChange}
       />
       <input
@@ -220,15 +220,15 @@ console.log(formData)
         placeholder='password'
         onChange={handleChange}
         id='password'
-        className='border p-3 rounded-lg'
+        className='border p-4 text-xl rounded-lg'
       />
       <button disabled={loading}
-       className='bg-slate-700 text-white rounded-lg p-3 uppercase hover:opacity-95 disabled:opacity-80'
+       className='bg-black text-white rounded-lg p-4 text-xl uppercase hover:opacity-95 disabled:opacity-80'
       >
        {loading ? 'Loading...' : 'Update'}
       </button> 
       <Link
-          className='bg-green-700 text-white p-3 rounded-lg uppercase text-center hover:opacity-95'
+          className='bg-black text-white p-4 text-xl rounded-lg uppercase text-center hover:opacity-95'
           to={'/create-listing'}
         >
           Create Listing
@@ -237,11 +237,11 @@ console.log(formData)
     <div className='flex justify-between mt-5'>
         <span
            onClick={handleDeleteUser}
-          className='text-red-700 cursor-pointer'
+          className='text-red-700 cursor-pointer text-xl font-semibold'
         >
           Delete account
         </span>
-        <span onClick={handleSignOut} className='text-red-700 cursor-pointer'>
+        <span onClick={handleSignOut} className='text-red-700 cursor-pointer text-xl font-semibold'>
           Sign out
         </span>
       </div>
@@ -249,7 +249,7 @@ console.log(formData)
       <p className='text-green-700 mt-5 font-normal text-xl'>
         {updateSuccess ? 'User is updated successfully!' : ''}
       </p>
-      <button onClick={handleShowListings} className='text-green-700 w-full'>
+      <button onClick={handleShowListings} className='text-green-700 text-xl w-full'>
         Show Listings
       </button>
       <p className='text-red-700 mt-5'>
@@ -283,7 +283,7 @@ console.log(formData)
               <div className='flex flex-col item-center'>
                 <button
                   onClick={() => handleListingDelete(listing._id)}
-                  className='text-red-700 uppercase'
+                  className='text-red-700 uppercase '
                 >
                   Delete
                 </button>

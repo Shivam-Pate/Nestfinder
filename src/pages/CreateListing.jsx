@@ -166,7 +166,7 @@ export default function CreateListing() {
             className='border p-3 rounded-lg'
             id='name'
             maxLength='62'
-            minLength='10'
+            minLength='6'
             required
             onChange={handleChange}
             value={formData.name}
@@ -349,9 +349,10 @@ export default function CreateListing() {
                   className='w-20 h-20 object-contain rounded-lg'
                 />
                 <button
+                
                   type='button'
                   onClick={() => handleRemoveImage(index)}
-                  className='p-3 text-red-700 rounded-lg uppercase hover:opacity-75'
+                  className='p-3 text-red-700 rounded-lg uppercase  hover:opacity-75'
                 >
                   Delete
                 </button>
