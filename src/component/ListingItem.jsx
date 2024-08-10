@@ -11,9 +11,9 @@ export default function ListingItem({ listing }) {
             'https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/Sales_Blog/real-estate-business-compressor.jpg?width=595&height=400&name=real-estate-business-compressor.jpg'
           }
           alt='listing cover'
-          className='h-[320px] sm:h-[280px] w-full object-cover hover:scale-105 transition-scale duration-300'
+          className='h-[30px] sm:h-[280px] w-full object-cover hover:scale-105 transition-scale duration-300 '
         />
-        <div className='p-3 flex flex-col gap-2 w-full'>
+        <div className='p-3 flex flex-col gap-2  border-r border-b border-l border-solid border-slate-900'>
           <p className='truncate text-2xl font-semibold text-slate-700'>
             {listing.name}
           </p>

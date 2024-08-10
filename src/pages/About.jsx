@@ -1,14 +1,35 @@
-import React from 'react'
+import React from 'react';
+import about from '../assets/about.jpeg';
 
 export default function About() {
   return (
-    <div className='py-20 px-4 max-w-6xl mx-auto'>
-      <h1 className='text-4xl font-bold mb-4 text-slate-800'>About Nest Finder</h1>
-      <p className='mb-4 text-slate- text-xl'>Nest Finder is a leading real estate agency that specializes in helping clients buy, sell, and rent properties in the most desirable neighborhoods. Our team of experienced agents is dedicated to providing exceptional service and making the buying and selling process as smooth as possible.</p>
-      <p className='mb-4 text-slate-700 text-xl'>
-      Our mission is to help our clients achieve their real estate goals by providing expert advice, personalized service, and a deep understanding of the local market. Whether you are looking to buy, sell, or rent a property, we are here to help you every step of the way.
-      </p>
-      <p className='mb-4 text-slate-700 text-xl'>Our team of agents has a wealth of experience and knowledge in the real estate industry, and we are committed to providing the highest level of service to our clients. We believe that buying or selling a property should be an exciting and rewarding experience, and we are dedicated to making that a reality for each and every one of our clients.</p>
+    <div className='bg-stone-900 h-screen'>
+    <div className=" flex flex-col md:flex-row p-3 bg-stone-900 gap-3 ">
+      <div className="w-full md:w-1/2 flex justify-center">
+        <img src={about} className="h-[700px]  rounded-lg shadow-md" alt="About Nest Finder" />
+      </div>
+      <div className="w-full md:w-1/2 flex  flex-col justify-center px-5 text-white">
+        <div className="about-us-section p-6 bg-stone-900 shadow-lg rounded-lg">
+          <h2 className="text-3xl font-bold text-white mb-4">About Nest Finder</h2>
+          <p className="text-lg mb-4">
+            <strong>Nest Finder</strong> is a premier real estate agency with a reputation for excellence in helping clients navigate the complex world of buying, selling, and renting properties. We pride ourselves on being a trusted partner for those seeking to find their dream home or investment property in the most desirable neighborhoods.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-2">Our Mission</h3>
+          <p className="text-lg mb-4">
+            At Nest Finder, our mission is to turn real estate dreams into reality. We are committed to offering our clients expert guidance, personalized service, and an in-depth understanding of the local market. Whether you're a first-time homebuyer, an experienced investor, or someone looking to rent, we tailor our services to meet your unique needs and goals.
+          </p>
+
+          <h3 className="text-2xl font-semibold mb-2">Why Choose Nest Finder?</h3>
+          <ul className="list-disc list-inside text-lg mb-4">
+            <li><strong>Expertise in the Local Market:</strong> Our agents are seasoned professionals with deep roots in the communities we serve. We have a comprehensive understanding of market trends, neighborhood dynamics, and property values, ensuring you make informed decisions.</li>
+            <li><strong>Personalized Service:</strong> We believe that no two clients are alike. That’s why we take the time to understand your individual needs and preferences.</li>
+            <li><strong>Seamless Process:</strong> Buying, selling, or renting a property can be stressful, but it doesn't have to be. Our team is dedicated to making the process as smooth and straightforward as possible.</li>
+            <li><strong>Strong Negotiation Skills:</strong> Our agents are skilled negotiators who work tirelessly to secure the best possible terms for our clients.</li>
+          </ul>
+        </div>
+      </div>
     </div>
-  )
+    </div>
+  );
 }
